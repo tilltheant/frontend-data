@@ -63,6 +63,7 @@ function count (merkarray){
   })
 }
 
+//hele dataset filteren en in een array zetten
 function filterenhelearray (data){
   return data.map(uitkomst => uitkomst)
 }
