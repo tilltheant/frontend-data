@@ -51,3 +51,17 @@ Met deze visualisatie kan ik goed de kleuren en het type auto's laten zien, mijn
 Sjors Wijsman.
 De docenten van dit blok.
 De Studentassistenten.
+
+
+
+<details>
+<summary>Oude informatie</summary>
+  ## De data die ik gebruik 
+<br>
+De date die ik gebruik zijn afkomstig van RDW 
+Voor een uitgebreidere uitleg kan je gaan naar [WIKI Werkwijze](https://github.com/tilltheant/functional-programming/wiki/%5B2.1%5DWerkwijze-in-fases)
+Ik wil met de dataset mijn hoofdvraag beantwoorden: Wat is het gemiddelde van de tijdsduur aan parkeren in de amsterdam tijdens kerst in vergelijking met normale dagen?
+
+[RDW Speciale dagen dataset](https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-SPECIALE-DAG/hpi4-mynq)
+
+</details>
