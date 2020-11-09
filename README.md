@@ -24,7 +24,7 @@ Wat is de reden dat er meer rode auto's in jaar x wordt verkocht?
 Deelvragen.
 - Wat zijn dure auto's?
 - Welke auto's worden als goedkoop gekenmerkt?
-- Wat zijn typiche dure auto kleuren?
+- Wat zijn typische dure auto kleuren?
 
 [RDW Gekentekende-voertuigen](https://opendata.rdw.nl/Voertuigen/Open-Data-RDW-Gekentekende_voertuigen/m9d7-ebf2)
 (ik gebruik maar een dataset omdat de dataset vrij groot is en ik veel informatie eruit kan halen.)
