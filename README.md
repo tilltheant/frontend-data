@@ -9,8 +9,7 @@ In deze repo vind je mijn opdrachten/leerproces en mijn logboek van beide vakken
 ## Project.
 Voor de volkskrant heb ik als opdracht om met het onderwerp "De auto in de stad" een datavisualisatie te maken die interessant is, maar ook nieuwe inzichten bied die De Volkskrant weer kan gebruiken om een artikel over te schrijven. Deze kan worden gepubliseerd en wellicht gebruikt worden om achter andere inzichten te komen.
 
-<a href="https://ibb.co/yQtgX7H"><img src="
-https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Volkskrant.svg/1200px-Volkskrant.svg.png" alt="2020-11-06-5" border="0"></a>
+<a href="https://ibb.co/C8xYnTY"><img src="https://i.ibb.co/h9p4Kt4/1200px-Volkskrant-svg.png" alt="1200px-Volkskrant-svg" border="0"></a>
 
 ## De Data die ik gebruik.
 De data die ik gebruik is afkomstig van de RDW website.
