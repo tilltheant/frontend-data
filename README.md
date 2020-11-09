@@ -16,6 +16,12 @@ https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Volkskrant.svg/1200px-
 De data die ik gebruik is afkomstig van de RDW website.
 Mijn onderzoeksvraag: Zijn er overeenkomsten tussen dure auto's en de kleur ervan in vergelijking met auto's die goedkoper zijn?
 
+
+Is er een verschil in kleur van de auto's en het jaartal dat ze zijn gekocht?
+Welk jaar worden de meeste auto's verkocht?
+Wat is de reden dat er meer rode auto's in jaar x wordt verkocht?
+
+
 Deelvragen.
 - Wat zijn dure auto's?
 - Welke auto's worden als goedkoop gekenmerkt?
