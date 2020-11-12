@@ -4,6 +4,9 @@
 
 ## Intro.
 In deze repo vind je mijn opdrachten/leerproces en mijn logboek van beide vakken frond-end data en functional programming.
+ - In de VisualisationColor map kan je mijn visualisatie zien
+ - De andere mappen bevatten opdrachten en les stof.
+ - Voor de opdrachten/files van Functional programming verwijs ik je naar mijn andere repo. [FP REPO](https://github.com/tilltheant/functional-programming)
 
 
 ## Project.
@@ -30,7 +33,7 @@ Deelvragen.
 (ik gebruik maar een dataset omdat de dataset vrij groot is en ik veel informatie eruit kan halen.)
 
 
-## Hoe werkt het?
+## Voorbeelden?
 In deze dataset kan ik vooral de soort auto's vinden en de verschillende kleuren ervan, deze wil ik combineren en zo visualiseren dat je een patroon kan vinden in de dataset die mijn hoofdvraag kan beantwoorden of debunken.
 
 De dataset verander ik naar een visualisatie met D3 een aantal voorbeelden van hoe ik mijn visualisatie wil hebben:
@@ -40,6 +43,12 @@ Bij deze visualisatie heb ik gekozen voor een map met een bar chart en dan de lo
 
 Met deze visualisatie kan ik goed de kleuren en het type auto's laten zien, mijn doel is om deze charts te gebruiken om zo een duidelijker overzicht te maken van welke auto's nou welke kleur hebben.
 <a href="https://ibb.co/txGC0PY"><img src="https://i.ibb.co/Gt6PZ3C/2020-11-06-4.png" alt="2020-11-06-4" border="0"></a>
+
+### Visualisatie
+
+Voor de visualisatie heb ik gekozen om door jaren heen te filteren zodat je kan zien welke auto's werden verkocht in dat jaar gebaseerd op kleur.
+
+<a href="https://ibb.co/mchMkYZ"><img src="https://i.ibb.co/gRtBNXq/2020-11-12-4.png" alt="2020-11-12-4" border="0"></a>
 
 
 
