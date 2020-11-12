@@ -32,7 +32,7 @@ Deelvragen.
 [RDW Gekentekende-voertuigen](https://opendata.rdw.nl/Voertuigen/Open-Data-RDW-Gekentekende_voertuigen/m9d7-ebf2)
 (ik gebruik maar een dataset omdat de dataset vrij groot is en ik veel informatie eruit kan halen.)
 
-
+- Voor meer info over mijn hoofdvraag kan je kijken bij [Onderzoeksvraag wiki](https://github.com/tilltheant/frontend-data/wiki/1.0-Onderzoeksvraag)
 ## Voorbeelden?
 In deze dataset kan ik vooral de soort auto's vinden en de verschillende kleuren ervan, deze wil ik combineren en zo visualiseren dat je een patroon kan vinden in de dataset die mijn hoofdvraag kan beantwoorden of debunken.
 
@@ -50,7 +50,9 @@ Voor de visualisatie heb ik gekozen om door jaren heen te filteren zodat je kan 
 
 <a href="https://ibb.co/mchMkYZ"><img src="https://i.ibb.co/gRtBNXq/2020-11-12-4.png" alt="2020-11-12-4" border="0"></a>
 
-
+- Voor snips van hoe ik het heb gedaan verwijs ik je naar [Leerproces wiki](https://github.com/tilltheant/frontend-data/wiki/7.0-Leerproces)
+- Voor Patterns kan je kijken bij [FR uitleg](https://github.com/tilltheant/frontend-data/wiki/6.0-FD-uitleg)
+- Voor de code moet je gaan naar _de VisualisationColor map_
 
 ## Credits licentie.
 Sjors Wijsman.
