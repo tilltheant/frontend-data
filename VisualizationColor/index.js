@@ -2,23 +2,42 @@
 const kentekenautos =
   'https://opendata.rdw.nl/resource/m9d7-ebf2.json?$limit=10000';
 
-//wachten op de data en dan de data omzetten naar visualisatie
 
+
+
+
+
+
+
+//wachten op de data, vervolgens tellen en in een array zetten,
+//sorteren per jaartal en vervolgens visualiseren.
+//---------------------------------------------------------------------------------------------------
 getData().then((resultaat) => {
   const jaardata = count(resultaat);
   const sortedData = jaardata.sort(sortByYear);
   datavismaken(sortedData);
 });
 
-//de visualisatie!!! bron: https://www.d3-graph-gallery.com/graph/barplot_button_data_hard.html
 
+
+
+
+
+
+
+
+
+
+
+//de visualisatie!!! bron: https://www.d3-graph-gallery.com/graph/barplot_button_data_hard.html
+//---------------------------------------------------------------------------------------------------
 function datavismaken(sortedData) {
-  // set the dimensions and margins of the graph
+  // vast margin voor hergebruik
   const margin = { top: 30, right: 30, bottom: 70, left: 60 },
     width = 560 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
-  // append the svg object to the body of the page
+  // koppelen van de html svg en aanmaken van de attri aan de svg
   let svg = d3
     .select('#my_dataviz')
     .append('svg')
@@ -27,11 +46,11 @@ function datavismaken(sortedData) {
     .append('g')
     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-  // Initialize the X axis
+  // Maken X As
   let x = d3.scaleBand().range([0, width]).padding(0.2);
   let xAxis = svg.append('g').attr('transform', 'translate(0,' + height + ')');
 
-  // Initialize the Y axis
+  // maken Y As
   let y = d3.scaleLinear().range([height, 0]);
   let yAxis = svg.append('g').attr('class', 'myYaxis');
 
@@ -45,7 +64,9 @@ function datavismaken(sortedData) {
     .style('text-decoration', 'none')
     .text("Meest verkochte auto's per kleur");
 
-  // A function that create / update the plot for a given variable:
+
+  // functie maken die de data update op basis van de gegeven data
+  //---------------------------------------------------------------------------------------------------
   function update(dataJaareen) {
     console.log(dataJaareen);
     let data = dataJaareen.data;
@@ -67,9 +88,9 @@ function datavismaken(sortedData) {
     ]);
     yAxis.transition().duration(1000).call(d3.axisLeft(y));
 
-    // Create the u variable
+    // maak nieuwe let
     let change = svg.selectAll('rect').data(data);
-
+//met merge() combineer je de UPDATE en ENTER samen zodat het een geheel is
     change
       .enter()
       .append('rect') // Add a new rect for each new elements
@@ -104,7 +125,18 @@ function datavismaken(sortedData) {
   });
 }
 
+
+
+
+
+
+
+
+
+
+
 //FUNCTIES
+//---------------------------------------------------------------------------------------------------
 
 //ophalen van de data, met async wachten totdat de data binnenisgehaald in een json
 //vervolgens filteren naar een andere array door eroverheen te mappen
@@ -128,6 +160,7 @@ async function dataophalen(url) {
   return data;
 }
 
+//zoeken naar het year in de object van RDW als die true is dan return hij die waarde
 function findYearIndex(yearItem, array) {
   return array.findIndex((item) => yearItem.year === item.year);
 }
@@ -185,7 +218,7 @@ function filterenhelearray(data) {
   return data.map((uitkomst) => uitkomst);
 }
 
-//sorteren op jaar, door de strings naar numbers te veranderen || samen met gijd gemaakt.
+//sorteren op jaar, door de strings naar numbers te veranderen || samen met gijs gemaakt.
 function sortByYear(a, b) {
   const yearA = Number(a.year);
   const yearB = Number(b.year);
@@ -193,19 +226,4 @@ function sortByYear(a, b) {
   if (yearA < yearB) return -1;
   if (yearA > yearB) return 1;
   return 0;
-}
-
-//samen met sjors gemaakt
-//de object omzetten naar een array door een nieuwe let aan te maken
-// // en
-// function arraydata(jaardata) {
-//   return Object.keys(jaardata).map((jaar) => {
-//     let data = {};
-//     (data.jaartal = jaar), (data.kleur = jaardata[jaar]);
-//     return data;
-//   });
-// }
-
-function filterenkolom(data, kolom) {
-  return data.map((uitkomst) => uitkomst[kolom]);
 }

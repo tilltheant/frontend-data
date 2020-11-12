@@ -16,12 +16,47 @@ const kentekenautos = "https://opendata.rdw.nl/resource/m9d7-ebf2.json";
 //wachten op de data en dan de data tellen
 getData().then(resultaat => {
   const jaardata = count(resultaat)
+  const dataready = arraydata(jaardata);
 
 
+//DE VAriablen voor de visualisatie
+  const svg = select('svg');
+  const width = +svg.attr('width');
+  const height = +svg.attr('height');
+  console.log(dataready)
 
+const xScale =scaleLinear()
+  .domain([0, 20])
+	.range([0,width]);
 
+const yScale = scaleBand()
+	//.domain(dataready.map( d => Object.keys(dataready.kleur)))
+	// .range();
 
-  console.log(jaardata)
+console.log(yScale.domain());
+
+//DE VISUALISATIE
+
+//const newData = dataready.filter(data => data.jaartal === "2011")
+//console.log(newData)
+
+ // if (typeof Object.keys(newData.kleur) !== 'undefined' && Object.keys(newData.kleur).length > 0) {
+ //       // You have an array
+ //   console.log("het is gelukt")}
+//console.log(Object.values(newData.kleur))
+
+	svg.selectAll("rect")
+    .data(dataready)
+    .enter().append("rect")
+          .attr("height", d => {
+            if (d.kleur.ROOD) {
+							return xScale(d.kleur.ROOD)
+            } else return 0
+
+       })
+          .attr("width",350);
+
+})
 })
 
 
@@ -79,6 +114,19 @@ function count (merkarray){
   })
   return countobject;
 }
+
+//samen met sjors gemaakt
+//de object omzetten naar een array door een nieuwe let aan te maken
+// en
+function arraydata (jaardata){
+   return Object.keys(jaardata).map(jaar => {
+    	let data = {};
+			data.jaartal = jaar,
+      data.kleur = jaardata[jaar]
+    return data
+    }
+
+)}
 
 //hele dataset filteren en in een array zetten
 function filterenhelearray (data){
