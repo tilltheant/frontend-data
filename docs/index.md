@@ -1,37 +1,73 @@
-## Welcome to GitHub Pages
+# FrontEndData
 
-You can use the [editor on GitHub](https://github.com/tilltheant/frontend-data/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+## Intro.
+In deze repo vind je mijn opdrachten/leerproces en mijn logboek van beide vakken frond-end data en functional programming.
+ - In de VisualisationColor map kan je mijn visualisatie zien
+ - De andere mappen bevatten opdrachten en les stof.
+ - Voor de opdrachten/files van Functional programming verwijs ik je naar mijn andere repo. [FP REPO](https://github.com/tilltheant/functional-programming)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+## Project.
+Voor de volkskrant heb ik als opdracht om met het onderwerp "De auto in de stad" een datavisualisatie te maken die interessant is, maar ook nieuwe inzichten bied die De Volkskrant weer kan gebruiken om een artikel over te schrijven. Deze kan worden gepubliseerd en wellicht gebruikt worden om achter andere inzichten te komen.
 
-# Header 1
-## Header 2
-### Header 3
+<a href="https://ibb.co/C8xYnTY"><img src="https://i.ibb.co/h9p4Kt4/1200px-Volkskrant-svg.png" alt="1200px-Volkskrant-svg" border="0"></a>
 
-- Bulleted
-- List
+## De Data die ik gebruik.
+De data die ik gebruik is afkomstig van de RDW website.
+Mijn onderzoeksvraag: Zijn er overeenkomsten tussen dure auto's en de kleur ervan in vergelijking met auto's die goedkoper zijn?
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+Is er een verschil in kleur van de auto's en het jaartal dat ze zijn gekocht?
+Welk jaar worden de meeste auto's verkocht?
+Wat is de reden dat er meer rode auto's in jaar x wordt verkocht?
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Deelvragen.
+- Wat zijn dure auto's?
+- Welke auto's worden als goedkoop gekenmerkt?
+- Wat zijn typische dure auto kleuren?
 
-### Jekyll Themes
+[RDW Gekentekende-voertuigen](https://opendata.rdw.nl/Voertuigen/Open-Data-RDW-Gekentekende_voertuigen/m9d7-ebf2)
+(ik gebruik maar een dataset omdat de dataset vrij groot is en ik veel informatie eruit kan halen.)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tilltheant/frontend-data/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+## Voorbeelden?
+In deze dataset kan ik vooral de soort auto's vinden en de verschillende kleuren ervan, deze wil ik combineren en zo visualiseren dat je een patroon kan vinden in de dataset die mijn hoofdvraag kan beantwoorden of debunken.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+De dataset verander ik naar een visualisatie met D3 een aantal voorbeelden van hoe ik mijn visualisatie wil hebben:
+
+Bij deze visualisatie heb ik gekozen voor een map met een bar chart en dan de locaties waar je het beste kan parkeren. Omdat mijn dataset en hoofdvraag werd aangepast kon ik deze visualisatie niet meer gebruiken. 
+<a href="https://ibb.co/yQtgX7H"><img src="https://i.ibb.co/QKLYfty/2020-11-06-5.png" alt="2020-11-06-5" border="0"></a>
+
+Met deze visualisatie kan ik goed de kleuren en het type auto's laten zien, mijn doel is om deze charts te gebruiken om zo een duidelijker overzicht te maken van welke auto's nou welke kleur hebben.
+<a href="https://ibb.co/txGC0PY"><img src="https://i.ibb.co/Gt6PZ3C/2020-11-06-4.png" alt="2020-11-06-4" border="0"></a>
+
+### Visualisatie
+
+Voor de visualisatie heb ik gekozen om door jaren heen te filteren zodat je kan zien welke auto's werden verkocht in dat jaar gebaseerd op kleur.
+
+<a href="https://ibb.co/mchMkYZ"><img src="https://i.ibb.co/gRtBNXq/2020-11-12-4.png" alt="2020-11-12-4" border="0"></a>
+
+
+
+## Credits licentie.
+Sjors Wijsman.
+De docenten van dit blok.
+De Studentassistenten.
+
+
+
+<details>
+<summary>Oude informatie</summary>
+  ## De data die ik gebruik 
+<br>
+De date die ik gebruik zijn afkomstig van RDW 
+Voor een uitgebreidere uitleg kan je gaan naar [WIKI Werkwijze](https://github.com/tilltheant/functional-programming/wiki/%5B2.1%5DWerkwijze-in-fases)
+Ik wil met de dataset mijn hoofdvraag beantwoorden: Wat is het gemiddelde van de tijdsduur aan parkeren in de amsterdam tijdens kerst in vergelijking met normale dagen?
+
+[RDW Speciale dagen dataset](https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-SPECIALE-DAG/hpi4-mynq)
+
+</details>
+
