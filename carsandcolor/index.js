@@ -1,15 +1,31 @@
-
+import {
+  select,
+  csv,
+  scaleLinear,
+  max,
+  scaleBand,
+  axisLeft,
+  axisBottom,
+  format
+} from 'd3';
 //ophalen data van alle autos met hun kleur
 const kentekenautos = "https://opendata.rdw.nl/resource/m9d7-ebf2.json";
 
 
 
-//wachten op de data en dan de data
+//wachten op de data en dan de data tellen
 getData().then(resultaat => {
   const jaardata = count(resultaat)
 
+
+
+
+
   console.log(jaardata)
 })
+
+
+
 
 
 
@@ -32,15 +48,15 @@ async function getData(){
   return combinedData;
 }
 
-
+// de data ophalen en wachten op een antwoord voordat die verder gaat, vervolgens de data omzetten naar een json
 async function dataophalen(url) {
   const antwoord = await fetch(url)
-  const data = await antwoord.json (url)
+  const data = await antwoord.json(url)
   return data
 }
 
 
-// samen met gijs gemaakt
+// samen met gijs gemaakt tellen van de jaartallen en kleuren per jaartal
 function count (merkarray){
   const countobject = {};
 
@@ -53,7 +69,7 @@ function count (merkarray){
       countobject[year][color]++
     } else {
         if (color === 'N.v.t.') {return}
-
+//als countobject true is then countobject = 1
       if (!countobject[year]) {
         countobject[year] = {}
         }
@@ -61,6 +77,7 @@ function count (merkarray){
       countobject[year][color] = 1
     }
   })
+  return countobject;
 }
 
 //hele dataset filteren en in een array zetten
