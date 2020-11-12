@@ -10,9 +10,11 @@ In deze repo vind je mijn opdrachten/leerproces en mijn logboek van beide vakken
 
 
 ## Project.
+<div  style = "display: block;">
+<a href="https://ibb.co/Y3MrhKP"><img src="https://i.ibb.co/g3pnJXm/volkskrant-logo.png" alt="volkskrant-logo" border="0" style="float: right;" width="400" height= "300"></a>
 Voor de volkskrant heb ik als opdracht om met het onderwerp "De auto in de stad" een datavisualisatie te maken die interessant is, maar ook nieuwe inzichten bied die De Volkskrant weer kan gebruiken om een artikel over te schrijven. Deze kan worden gepubliseerd en wellicht gebruikt worden om achter andere inzichten te komen.
+</div>
 
-<a href="https://ibb.co/C8xYnTY"><img src="https://i.ibb.co/h9p4Kt4/1200px-Volkskrant-svg.png" alt="1200px-Volkskrant-svg" border="0"></a>
 
 ## De Data die ik gebruik.
 De data die ik gebruik is afkomstig van de RDW website.
@@ -38,7 +40,7 @@ In deze dataset kan ik vooral de soort auto's vinden en de verschillende kleuren
 
 De dataset verander ik naar een visualisatie met D3 een aantal voorbeelden van hoe ik mijn visualisatie wil hebben:
 
-Bij deze visualisatie heb ik gekozen voor een map met een bar chart en dan de locaties waar je het beste kan parkeren. Omdat mijn dataset en hoofdvraag werd aangepast kon ik deze visualisatie niet meer gebruiken. 
+Bij deze visualisatie heb ik gekozen voor een map met een bar chart en dan de locaties waar je het beste kan parkeren. Omdat mijn dataset en hoofdvraag werd aangepast kon ik deze visualisatie niet meer gebruiken. <br>
 <a href="https://ibb.co/yQtgX7H"><img src="https://i.ibb.co/QKLYfty/2020-11-06-5.png" alt="2020-11-06-5" border="0"></a>
 
 Met deze visualisatie kan ik goed de kleuren en het type auto's laten zien, mijn doel is om deze charts te gebruiken om zo een duidelijker overzicht te maken van welke auto's nou welke kleur hebben.
