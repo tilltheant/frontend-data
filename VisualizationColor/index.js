@@ -47,11 +47,11 @@ function datavismaken(sortedData) {
     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
   // Maken X As
-  let x = d3.scaleBand().range([0, width]).padding(0.2);
+  let xScale = d3.scaleBand().range([0, width]).padding(0.2);
   let xAxis = svg.append('g').attr('transform', 'translate(0,' + height + ')');
 
   // maken Y As
-  let y = d3.scaleLinear().range([height, 0]);
+  let yScale = d3.scaleLinear().range([height, 0]);
   let yAxis = svg.append('g').attr('class', 'myYaxis');
 
   //text toevoegen aan de SVG
@@ -72,21 +72,21 @@ function datavismaken(sortedData) {
     let data = dataJaareen.data;
 
     // Update the X axis
-    x.domain(
+    xScale.domain(
       data.map(function (d) {
         return d.color;
       })
     );
-    xAxis.call(d3.axisBottom(x));
+    xAxis.call(d3.axisBottom(xScale));
 
     // Update the Y axis
-    y.domain([
+    yScale.domain([
       0,
       d3.max(data, function (d) {
         return d.value;
       }),
     ]);
-    yAxis.transition().duration(1000).call(d3.axisLeft(y));
+    yAxis.transition().duration(1000).call(d3.axisLeft(yScale));
 
     // maak nieuwe let
     let change = svg.selectAll('rect').data(data);
@@ -98,14 +98,14 @@ function datavismaken(sortedData) {
       .transition() // and apply changes to all of them
       .duration(1000)
       .attr('x', function (d) {
-        return x(d.color);
+        return xScale(d.color);
       })
       .attr('y', function (d) {
-        return y(d.value);
+        return yScale(d.value);
       })
-      .attr('width', x.bandwidth())
+      .attr('width', xScale.bandwidth())
       .attr('height', function (d) {
-        return height - y(d.value);
+        return height - yScale(d.value);
       })
       .attr('fill', '#69b3a2');
 
